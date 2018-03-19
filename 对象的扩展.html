@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*   let birth = '2000/01/01';
+     const Person = {
+     name:'张三',
+     birth,
+     hello(){
+     console.log('我的名字是',this.name,'我的生日是',birth);
+     }
+     }
+     Person.hello();*/
+
+
+    // assign() 用于合并对象属性
+    const target = {a:1};
+    const source1 = {b:2};
+    const source2 = {c:3};
+    Object.assign(target,source1,source2);
+    console.log(target)
+
+</script>
+</body>
+</html>

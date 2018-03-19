@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-2.0.3.js"></script>
+</head>
+<body>
+    <div id="list"></div>
+<script>
+
+   /* var  a = "\u{20887}";
+    console.log(a)
+    console.log("\u{41}\u{42}\u{43}");*/
+
+   // for of 遍历字符串
+    /*for(let s of 'foo'){
+        console.log(s);
+    }*/
+
+/*    let s = 'Hello world';
+   console.log(s.startsWith('Hello'));  是从是从什么开始
+   console.log(s.endsWith('!'));     是否是到xxx结束
+   console.log(s.includes('o'));     是否包含xxx*/
+
+   /*let s = 'Hello world';
+   console.log(s.startsWith('world',6));
+   console.log(s.endsWith('Hello',5));
+   console.log(s.includes('ld',6));
+   上面代码表示，使用第二个参数n时，endsWith的行为与其他两个方法有所不同。它针对前n个字符，而其他两个方法针对从第n个位置直到字符串结束。*/
+
+
+    //repeat方法返回一个新字符串，表示将原字符串重复n次。
+    //console.log('x'.repeat(3));  // xxx
+    //console.log('hello'.repeat(2)); // hellohello
+    //console.log('na'.repeat(0)) // ""
+
+
+
+   //模板字符串   ``
+    /*
+     $('#result').append(
+     'There are <b>' + basket.count + '</b> ' +
+     'items in your basket, ' +
+     '<em>' + basket.onSale +
+     '</em> are on sale!'
+     );
+     上面这种写法相当繁琐不方便，ES6 引入了模板字符串解决这个问题。
+     $('#result').append(`
+     There are <b>${basket.count}</b> items
+     in your basket, <em>${basket.onSale}</em>
+     are on sale!
+     `);
+    * */
+
+   // 模板字符串中可嵌入变量
+   /*let name = "Bob", time = "today";
+   console.log(`Hello ${name}, how are you ${time}?`)*/
+
+    //如果在模板字符串中需要使用反引号，则前面要用反斜杠转义。
+    //console.log(`<p>this is \`p\` tag</p>`);
+
+/*   var str1 = `
+        <ul>
+          <li>first</li>
+          <li>second</li>
+        </ul>
+    `
+   console.log(str1)
+    console.log(str1.trim())
+ 所有模板字符串的空格和换行，都是被保留的，可以使用trim方法消除它。
+    */
+
+
+
+    //大括号内部可以放入任意的 JavaScript 表达式，可以进行运算，以及引用对象属性。
+   /* let x = 1;
+    let y = 2;
+    console.log(`${x} + ${y} = ${x+y}`);
+
+    console.log(`${x} + ${y*2} = ${x+y*2}`);
+    let obj = {x:1,y:2};
+    console.log(`${obj.x+obj.y}`);*/
+
+    /*function fn(){
+        return "Hello World";
+    }
+    console.log(`foo ${fn()} bar`);
+    //大括号内变量为定义 则会报错
+    console.log(`${aaa}`);*/
+</script>
+</body>
+</html>
